@@ -27,7 +27,7 @@ main() {
     tmux set-option -g status-left "#[bg=${white},fg=${darkgray}] #S #[bg=${navy},fg=${white}]${right_sep}"
     tmux set-option -g status-right "#[bg=${navy},fg=${aqua}]${left_sep}#[bg=${aqua},fg=${white}] %H:%M ${right_sep_thin} %m/%d/%Y #[bg=${aqua},fg=${white}]${left_sep}#[bg=${white},fg=${darkgray}] #h "
     tmux set-window-option -g window-status-format "#[bg=${navy},fg=${white}] #I ${left_sep_thin}#[bg=${navy},fg=${white}] #W #F "
-    tmux set-window-option -g window-status-current-format "#[bg=${aqua},fg=${navy},bold]${right_sep}#[bg=${aqua},fg=${white}] #I ${left_sep_thin}#[bg=${aqua},fg=${white}] #W #F #[bg=${navy},fg=${aqua},bold]${right_sep}"
+    tmux set-window-option -g window-status-current-format "#[bg=${aqua},fg=${navy}]${right_sep}#[bg=${aqua},fg=${white}] #I ${left_sep_thin}#[bg=${aqua},fg=${white}] #W #[bg=${navy},fg=${aqua}]${right_sep}"
 }
 
 main
